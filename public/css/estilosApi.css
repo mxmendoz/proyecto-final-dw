@@ -1,0 +1,54 @@
+body{
+    background-image: url('../img/fondoUsuario.png');
+}
+.container{
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(36, 192, 240, 0.2);
+    max-width: 475px;
+}
+.container2{
+    margin-top: 5px;
+    margin-left: 55px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(36, 192, 240, 0.2);
+    max-width: 1100px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+}
+
+.texto{
+    text-align: center;
+}
+
+.form-label{
+    margin-left: 1%;
+}
+
+.btn-guardar{
+    width: 100%;
+    padding: 7px;
+    background-color: #2f6bec;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+}
+
+.btn-guardar:hover, .btn-guardar:active{
+    color: #fff;
+    background-color: #2971c2;
+    border-color: #2c39ac;
+}
+
+.btn-guardar:focus{
+    box-shadow: 0 0 0 3px rgba(41, 205, 255, 0.25);
+}

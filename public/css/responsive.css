@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.header{ 
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(138, 178, 243, 0.5) 0%, rgba(177, 225, 247,
+    0.5) 100%), url(../img/Ingeniero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+}
+
+.menu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.menu__navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out; 
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); 
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu__navegacion a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copia{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* SECCION DE MIS SERVICIOS */
+
+.subtitulo{
+    text-align: center;
+    font-weight: 600;
+    color:#9f8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor__servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor__servicio img{
+    width: 40%;
+}
+
+.checklist__servicio{
+    width: 45%;
+}
+
+.servicio{
+    margin-bottom: 20px;
+}
+
+.n__servicio{
+    margin-bottom: 7px;
+    color: #9f8ad0;
+}
+
+.numero{
+    display: inline-block;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.galeria{
+    background: #f2f2f2;
+}
+
+.contenedor__galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img__galeria{
+    object-fit: cover;
+    width: 30%;
+    height: 300px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+
+.imagen__light{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.mostrar{
+    transform: translate(0);
+}
+
+.agregar__imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.mostrar__imagen{
+    transform: scale(1);
+}
+
+.cerrar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.expertos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor__experto{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor__experto img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.n_experto{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+}
+
+/* SECCION DE FOOTER */
+
+#contacto{
+    background: #adfaf3;
+    padding-bottom: 0.1px;
+}
+
+.footer__contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.mi__contacto{
+    width: 40%;
+    color:rgb(47, 6, 124);
+}
+
+.centro{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.centro+p{
+    font-weight: 500;
+} 
+
+.redes__sociales{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes__sociales--icono{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(47, 6, 124);
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(47, 6, 124);
+}
+
+.redes__sociales--icono:hover{
+    background: #fff;
+    color: #5ebdb5;;
+}
+
+.redes__sociales--icono i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.linea{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: rgb(47, 6, 124);
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px){
+    .menu__navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor__servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist__servicio{
+        width: 80%;
+    }
+
+    .servicio{
+        margin-bottom: 30px;
+    }
+
+    .agregar__imagen{
+        width: 80%;
+    }
+
+    .img__galeria{
+        width: 45%;
+    }
+
+    .contenedor__experto{
+        width: 80%;
+    }
+
+    .footer__contenido{
+        justify-content: center;
+    }
+
+    .redes__sociales{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .redes__sociales--icono{
+        margin-left: 0;
+    }
+
+    .redes__sociales i{
+        margin-left: 0;
+    }
+
+    .mi__contacto{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+} 
+
+@media screen and (max-width:500px){
+    .menu__navegacion{
+        width: 65vw;
+    }
+
+    .menu{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .agregar__imagen{
+        width: 95%;
+    }
+
+    .img__galeria{
+        width: 95%;
+    }
+
+    .redes__sociales{
+        width: 100%;
+    }
+
+    .mi__contacto{
+        width: 90%;
+    }
+}
